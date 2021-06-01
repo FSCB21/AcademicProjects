@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Nomina</title>
+</head>
+
+<body>
+    <div class="formularioConten" id="formularioConten">
+        <h1>NOMINA</h1>
+
+        <Form action="" method="get" name="formDatos" id="formDatos">
+            <div>
+                <label for="Name">Nombre:</label>
+                <input type="text" name="Name" id="Name">
+            </div>
+
+            <div>
+                Tipo documento
+                <input id="DocumentCC" type="radio" name="TipD" value="CC">
+                <label for="DocumentCC">CC</label>
+                <input id="DocumentTI" type="radio" name="TipD" value="TI">
+                <label for="DocumentTI">TI</label>
+
+                <input id="DocumentCE" type="radio" name="TipD" value="CE">
+                <label for="DocumentCE">CE</label>
+            </div>
+            <div>
+                <label for="Document">documento</label>
+                <input type="number" name="Document" id="Document">
+            </div>
+            <div>
+                <label for="salary">Sueldo</label>
+                <input type="number" name="salary" id="salary">
+            </div>
+            <div>
+                <label for="Days">Dias trabajados</label>
+                <input type="number" name="Days" id="Days">
+            </div>
+
+            <button type="button" onclick="ObtenerDatos()">Agregar</button>
+        </Form>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+    <table border="all" id="Tabla">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Tipo Documento</th>
+                <th>Documento</th>
+                <th>Sueldo</th>
+                <th>Dias trabajados</th>
+                <th>SUELDO_DIAS</th>
+                <th>AUX.TRANSPORTE</th>
+                <th>TOTAL.DEVENGADO</th>
+                <th>SALUD</th>
+                <th>PENSION</th>
+                <th>TOTAL_DEDUCIDO</th>
+                <th>NETO</th>
+
+
+
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    <button id="Boton-Imprimir">Imprimir Factura</button>
+
+    <script src="js/main.js" type="text/javascript"></script>
+    <script src="js/validarDatos.js" type="text/javascript"></script>
+
+</body>
+
+</html>

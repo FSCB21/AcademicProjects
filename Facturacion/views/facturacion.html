@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Facturacion De Un Producto</h2>
+    <div class="formF" id="formF">
+
+            <label for="">Nombre</label>
+            <input type="text" name="" id="Nombre">
+            <label for="">Tipo Documento</label>
+            <select name="" id="TipoDoc">
+                <option value="" selected>Seleccionar</option>
+                <option value="TI">TI</option>
+                <option value="CC">CC</option>
+                <option value="CE">CE</option>
+            </select>
+            <label for="">Documento</label>
+            <input type="text" name="" id="Documento">
+            <label for="">Correo</label>
+            <input type="email" name="" id="Correo">
+            <button type="" id="Boton-Datos">Siguiente</button>
+
+    </div>
+
+
+    <div style="display: none;" class="" id="probar">
+            <form id="formu">
+            <label for="">Articulo</label>
+            <input type="text" name="" id="Articulo">
+            <label for="">Precio Con Iva</label>
+            <input type="text" name="" id="PrecioIva">
+            <label for="">Porcentaje De Iva</label>
+            <input type="text" name="" id="Iva">
+            <label for="">Cantidad</label>
+            <input type="text" name="" id="Cantidad">
+            <button type="button" id = "Boton-NP">Agregar Producto</button>
+            <button type="button" id = "Boton-F" style="display: none;">Facturar</button>
+            </form>
+
+            <div class="productosC" id="productosC" style="display: none;">
+                <h2>Carrito De Compras</h2>
+                <div class="" id="productoCarro">
+                </div>
+            </div>
+    </div>
+
+    <div class="factura" style="display: none;" id="factura">
+
+        <div class="" id="DatosFac"></div>
+
+        <div class="" id="ProductosFac"></div>
+
+        <div class="" id="TotalSubTotalFac"></div>
+        <div class="" id="TotalIvaFac"></div>
+        <div class="" id="TotalConIvaFac"></div>
+
+        <button id="Boton-Imprimir">Imprimir Factura</button>
+        <button id="Boton-NuevaC" onclick="window.location.reload();">Nueva Compra</button>
+    </div>
+
+
+    <script src="../assets/js/facturacion/datos.js"></script>
+    <script src="../assets/js/facturacion/facturar.js"></script>
+</body>
+</html>

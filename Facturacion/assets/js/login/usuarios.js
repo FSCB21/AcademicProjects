@@ -22,8 +22,5 @@ function validarCredenciales(Usuario,Contra){
             entrar = true;
         }
     }
-
-    
-
     return entrar;
 }

@@ -21,7 +21,7 @@ function iniciarSesion(){
 
         sessionStorage.setItem('intentos', contador);
 
-        document.getElementById('cont1').innerHTML='Error!! intentos realizados ' + sessionStorage.getItem('intentos');
+        document.getElementById('cont1').innerHTML='<p style="color: #fff;">Error!! intentos realizados </p>' + sessionStorage.getItem('intentos');
         if (contador==3){
             alert("Muchos Intentos Fallidos. \nSe va a realizar una recarga del sistema");
             location.reload();

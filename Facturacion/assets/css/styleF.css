@@ -24,6 +24,7 @@ body, html {
   height: 500px;
   box-shadow: 1px 1px 108.8px 19.2px rgb(25,31,53);
 }
+
 .box h2{
     color: #fff;
 }
@@ -221,6 +222,6 @@ label span {
 /* Style Factura */
 
 .factura{
-    padding: 30%;
-    color: #fff;
+  color: #fff;
+  margin: 70px;
 }

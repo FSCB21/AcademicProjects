@@ -6,7 +6,6 @@ ProductosRegistrados = [
 
 ]
 
-
 function ValidarDatosP(){
     var Correcto = true;
     var Men ="";
@@ -92,6 +91,7 @@ function Facturar(){
     document.getElementById('TotalIvaFac').innerHTML='<p>Total Costo Iva: '+TotalDelValorIva.toFixed(0);
     document.getElementById('TotalConIvaFac').innerHTML='<p>Total Costo General: '+TotalDelTotalConIva.toFixed(0);
 
+    document.querySelector('#container').style.display = 'none';
     document.querySelector('#factura').style.display = 'block';
     document.querySelector('#probar').style.display = 'none';
 }

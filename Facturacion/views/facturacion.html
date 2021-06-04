@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/styleF.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="box" id="formF">
+                <h4>Facturacion <span>De Un Producto</span></h4>
+                    <input type="text" name="" id="Nombre" placeholder="Ingrese su Nombre">
+                    <select name="" id="TipoDoc">
+                        <option value="" selected>Tipo Documento</option>
+                        <option value="TI">TI</option>
+                        <option value="CC">CC</option>
+                        <option value="CE">CE</option>
+                    </select>
+                    <input type="text" name="" id="Documento" placeholder="Ingrese su Documento">
+                    <input type="email" name="" id="Correo" placeholder="Ingrese su Correo Electronico">
+                    <button type="submit" class="btn1" id="Boton-Datos">Siguiente</button>
+        </div>
+
+        <div style="display: none;" class="box" id="probar">
+                <form id="formu" class="box">
+                <input type="text" name="" id="Articulo" placeholder="Ingrese el Articulo">
+                <input type="text" name="" id="PrecioIva" placeholder="Ingrese el Precio con Iva">
+                <input type="text" name="" id="Iva" placeholder="Ingrese el Porcentaje de Iva">
+                <input type="text" name="" id="Cantidad" placeholder="Ingrese la cantidad de los productos a comprar">
+                <button type="button" id = "Boton-NP" class="btn1">Agregar Producto</button>
+                <button type="button" id = "Boton-F" class="btn1" style="display: none;">Facturar</button>
+                </form>
+
+                <div class="productosC" id="productosC" style="display: none;">
+                    <h2>Carrito De Compras</h2>
+                <div style="color:#fff" class="" id="productoCarro">
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="factura" style="display: none;" id="factura">
+        <div class="" id="DatosFac"></div>
+        <div class="" id="ProductosFac"></div>
+        <div class="" id="TotalSubTotalFac"></div>
+        <div class="" id="TotalIvaFac"></div>
+        <div class="" id="TotalConIvaFac"></div>
+
+        <button id="Boton-Imprimir">Imprimir Factura</button>
+        <button id="Boton-NuevaC" onclick="window.location.reload();">Nueva Compra</button>
+    </div>  
+
+<div class="footer">
+    <span>Hecho <i class="fa fa-heart pulse"></i> <a href=""><a href="">Por el mejor equipo.</a></span>
+</div>
+
+    <script src="../assets/js/facturacion/datos.js"></script>
+    <script src="../assets/js/facturacion/facturar.js"></script>
+</body>
+</html>

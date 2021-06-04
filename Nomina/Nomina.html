@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Nomina</title>
+</head>
+
+<body>
+    <h2>NOMINA</h2>
+    <div class="formDatos" id="formularioConten">
+
+        <Form class="" method="get" name="formDatos" id="formDatos">
+
+            <p type="Nombre:"><input type="text" name="Name" id="Name" placeholder="Ingrese Nombre"></p>
+
+            <p type="Tipo Documento:">
+            <p type="CC"><input id="DocumentCC" type="radio" name="TipD" value="CC"></p>
+            <p type="TI"><input id="DocumentTI" type="radio" name="TipD" value="TI"></p>
+            <p type="CE"><input id="DocumentCE" type="radio" name="TipD" value="CE"></p>
+            </p>
+
+            <p type="Documento:">
+                <input type="number" name="Document" id="Document" placeholder="Ingrese Documento">
+            </p>
+
+
+            <p type="Sueldo:">
+                <input type="number" name="salary" id="salary" placeholder="Ingrese sueldo actual">
+            </p>
+
+
+            <p type="Dias Trabajados:">
+                <input type="number" name="Days" id="Days" placeholder="Ingrese dias trabajados">
+            </p>
+
+            <button type="button" onclick="ObtenerDatos()">Agregar Empleado</button>
+        </Form>
+    </div>
+
+    <hr>
+
+    <section class="SeccionDiv" id="SeccionDiv">
+        <table border="all" id="Tabla">
+            <thead>
+                <tr id="header">
+                    <th>Nombre</th>
+                    <th>Tipo <br>Documento</th>
+                    <th>Documento</th>
+                    <th>Sueldo</th>
+                    <th>Dias <br>trabajados</th>
+                    <th>SUELDO<br>DIAS</th>
+                    <th>AUX<br>TRANSPORTE</th>
+                    <th>TOTAL<br>DEVENGADO</th>
+                    <th>SALUD</th>
+                    <th>PENSION</th>
+                    <th>TOTAL<br>DEDUCIDO</th>
+                    <th>NETO</th>
+
+
+
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+
+        <button id="Boton-Imprimir">Imprimir Nomina</button>
+    </section class="estohubiesesidoundi">
+
+
+    <footer class="footer">NOMINA 2021&copy;</footer>
+
+    <script src="js/main.js" type="text/javascript"></script>
+    <script src="js/validarDatos.js" type="text/javascript"></script>
+
+</body>
+
+</html>
